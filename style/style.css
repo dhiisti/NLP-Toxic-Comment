@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
+html {
+  background-color: #63C7B2;
+  min-width: 400px;
+  font-family: 'Rubik', sans-serif;
+  height: 100vh;
+}
+
+/* 
+.main {
+  background-color: #453225;
+  min-width: 400px;
+  min-height: 600x;
+  margin-top: 2%;
+  margin-left: 1%;
+  width: 30%;
+  height: 600px;
+  float: left;
+  border-radius: 1% 1% 1% 1%;
+  box-shadow: 3px 3px 0px #aaaaaa;
+} */
+
+.main h1 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-left: 120px;
+  padding-top: 40px;
+  height: 30px;
+}
+
+.main h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #ffffff;
+  margin-left: 0%;
+  padding: 50px 0px 0px 0px;
+  float: top;
+}
+
+.main h3 {
+  background-color: #453225;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: left;
+  margin-left: 10%;
+  padding-top: -20px;
+  width: 80%;
+  height: 60%;
+  float: top;
+}
+
+h1 {
+  text-align: left;
+}
+
+h2 {
+  text-align: left;
+}
+
+.demo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0% 5%;
+  background-size: cover;
+  background-color: #263D42;
+  height: 80%;
+  width: 80%;
+  float: none;
+  border-radius: 1% 1% 1% 1%;
+  box-shadow: 15px 15px 0px #EEF1EF;
+}
+
+.demo h1 {
+  color: #EEF1EF;
+  font-weight: 700;
+  padding: 60px 0px 2% 0px;
+  font-size: 50px;
+}
+
+.demo h2 {
+  color: #EEF1EF;
+  font-weight: 500;
+  font-size: 24px;
+  width: 60%;
+}
+
+.demo label {
+  color: #EEF1EF;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+input {
+  padding-left: 20px;
+  color: #333333;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  width: 350px;
+  height: 40px;
+  float: left;
+  border-radius: 12px 0px 0px 12px;
+  border:none;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 0px 12px 12px 0px;
+  background-color: #DA2C38;
+  border: none;
+  color: #CCDBDC;
+  text-align: center;
+  font-size: 18px;
+  padding: 0px;
+  transition: all 0.5s;
+  height: 40px;
+  width: 150px;
+  cursor: pointer;
+  /* float:left;   */
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#loaderlabel {
+  position: absolute;
+  left: 200px;
+  top: 410px;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  animation: fade;
+}
+
+@keyframes fade {
+  from {
+    z-index: 1;
+  }
+  to {
+    z-index: -1;
+  }
+}
+
+#loader {
+  position: absolute;
+  left: 200px;
+  top: 470px;
+  z-index: 1;
+  margin: -75px 0 0 -75px;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+a:link {
+  color: #3498db;
+}
+a:hover {
+  color: #ff7700;
+}
+a:active {
+  color: green;
+}

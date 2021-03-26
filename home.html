@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Tensorflow.js: Sentiment Analysis Demo</title>
+    <!-- Loading in TensorFlow.js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script> --> 
+
+    <link href="style/style.css" rel="stylesheet">
+  </head>
+  <body onload="myFunction()" style="margin:0;">
+    <!-- Add a <div> tag with the "main" class -->
+    
+    <!-- <div class = "main">
+    <div class="container"></div>
+      
+      <h1>Tensorflow.js</h1>
+      <h2>Sentiment Analysis Demo</h2>
+      
+      <h3>
+      <p>
+        This example demonstrated loading a pre-trained model and using it in the browser. This model is trained to
+        predict the sentiment of a short restaurant review (as a score between 0 and 1). The training is done server side
+        using Python and then converted into a TensorFlow.js model.
+      </p>
+      <p>
+        The model is trained using YELP reviews that have been truncated to a maximum of 18 words, only the
+        2000 most used words in the reviews are used. You can experiment with the model on this page
+      </p>
+      </h3>
+      
+    </div> -->
+
+    
+    <div class="container">
+    
+
+    <div class = "demo">
+      <h1>Think Before You Post Something</h1>
+      <h2>No one wanted to be cancelled. Post your comment here and see what the score is</h2>
+      <br><br>
+      <!-- <div id="loaderlabel"><h2>Loading Model...</h2></div>
+      <div id="loader"> </div>    -->
+      <div style="" id="mainAPP">
+        <label for="input">Your comment </label><br><br>
+        <input placeholder="Try: 'F**king A**hole" id="input">
+        <button class="button" style="vertical-align:middle"><span>Post Review </span></button>
+        <p></p>
+     </div>     
+    </div>  
+          
+    </div>  
+      <!-- <script src="predict.js"></script> -->
+  </body>
+</html>
